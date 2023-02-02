@@ -1,0 +1,27 @@
+<form #form="ngForm" (ngSubmit)="submitForm(form.value)">
+    <h3>Add User</h3>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required ngModel>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required ngModel>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required ngModel>
+    <div class="form-group">
+        <label for="cityName">City Name:</label>
+        <input type="text" class="form-control" id="cityName" [(ngModel)]="city.cityName" name="cityName" required>
+      </div>
+      <option value="">Select City</option>
+      <!-- Add options for city here -->
+   
+    <div class="form-group">
+        <label for="districtName">District Name:</label>
+        <input type="text" class="form-control" id="districtName" [(ngModel)]="city.districtName" name="districtName" required>
+      </div>
+      <div class="form-group">
+        <label for="state">State:</label>
+        <input type="text" class="form-control" id="state" [(ngModel)]="city.state" name="state" required>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+
+  </form>
+  

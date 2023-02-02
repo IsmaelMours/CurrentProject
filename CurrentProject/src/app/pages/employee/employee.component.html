@@ -1,0 +1,24 @@
+<form #employeeForm="ngForm" (ngSubmit)="submitForm(employeeForm.value)">
+    <h3>Add Employee</h3>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required ngModel>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required ngModel>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required ngModel>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Add employee data here -->
+    </tbody>
+  </table>
+  
